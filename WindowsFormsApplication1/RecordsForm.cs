@@ -21,5 +21,15 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "Ну и зачем зашёл";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Red; 
+        }
     }
 }
