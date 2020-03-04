@@ -16,6 +16,7 @@ namespace WindowsFormsApplication1
         public int vosrast;
         public string pol;
         public Label lbl;
+        public PictureBox pic;
 
         public Pers(string name1 , int vosrast1 , string pol1)
         {
@@ -23,6 +24,7 @@ namespace WindowsFormsApplication1
             vosrast = vosrast1;
             pol = pol1;
             lbl = new Label();
+            pic = new PictureBox();
         }
     }
 
@@ -55,6 +57,17 @@ namespace WindowsFormsApplication1
                 persljud[i].lbl.Size = new Size(80, 20);
                 persljud[i].lbl.Text = persljud[i].name;
                 Controls.Add(persljud[i].lbl);
+
+                persljud[i].pic.Location = new Point(x, 120);
+                persljud[i].pic.Size = new Size(80, 60);
+                persljud[i].pic.SizeMode = PictureBoxSizeMode.Zoom;
+                try
+                {
+                    persljud[i].pic.Load("../../Картинки/" + persljud[i].name + ".jpg");
+                }
+                catch (Exception) { }
+                Controls.Add(persljud[i].pic);
+
                 x = x + 100;
             }
         }
@@ -78,11 +91,13 @@ namespace WindowsFormsApplication1
             for (int i = 0; i < 10; i=i+1)
             {
                 persljud[i].lbl.Visible = true;
+                persljud[i].pic.Visible = true;
 
                 if (vozrastTextBox.Text != "" &&
                     persljud[i].vosrast > Convert.ToInt32(vozrastTextBox.Text))   
                 {
                     persljud[i].lbl.Visible = false;
+                    persljud[i].pic.Visible = false;
                 }
 
                 else if (
@@ -91,11 +106,13 @@ namespace WindowsFormsApplication1
                     persljud[i].pol != (polComboBox.Text))
                 {
                     persljud[i].lbl.Visible = false;
+                    persljud[i].pic.Visible = false;
                 }
 
                 if (persljud[i].lbl.Visible)
                 {
                     persljud[i].lbl.Location = new Point(x, 100);
+                    persljud[i].pic.Location = new Point(x, 120);
                     x = x + 100;
                 }
             }

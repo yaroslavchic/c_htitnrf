@@ -82,7 +82,7 @@
             this.polComboBox.Size = new System.Drawing.Size(100, 21);
             this.polComboBox.TabIndex = 6;
             // 
-            // Form2
+            // filtr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,8 +92,8 @@
             this.Controls.Add(this.vozrastTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "filtr";
+            this.Text = "Фильтр";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
