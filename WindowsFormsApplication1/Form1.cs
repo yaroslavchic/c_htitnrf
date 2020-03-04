@@ -143,7 +143,7 @@ namespace WindowsFormsApplication1
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form2 d = new Form2();
+            filtr d = new filtr();
             d.Show();
         }
     }
