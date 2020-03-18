@@ -38,3 +38,16 @@ E:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csp
 E:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
 E:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 E:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+F:\ggg\c_htitnrf\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+F:\ggg\c_htitnrf\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+F:\ggg\c_htitnrf\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojAssemblyReference.cache
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.filtr.resources
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Geroy.resources
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.GiveMeMoneyForm.resources
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.recordsForm.resources
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+F:\ggg\c_htitnrf\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

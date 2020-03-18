@@ -33,6 +33,7 @@
             this.vozrastTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.polComboBox = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // button1
@@ -82,11 +83,21 @@
             this.polComboBox.Size = new System.Drawing.Size(100, 21);
             this.polComboBox.TabIndex = 6;
             // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Location = new System.Drawing.Point(-1, 104);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(639, 161);
+            this.panel2.TabIndex = 8;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
             // filtr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 261);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.polComboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.vozrastTextBox);
@@ -107,5 +118,6 @@
         private System.Windows.Forms.TextBox vozrastTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox polComboBox;
+        private System.Windows.Forms.Panel panel2;
     }
 }

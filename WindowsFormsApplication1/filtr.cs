@@ -68,9 +68,9 @@ namespace WindowsFormsApplication1
                 persljud[i].lbl.Size = new Size(80, 20);
                 persljud[i].lbl.Text = persljud[i].name;
                 persljud[i].lbl.Click += new EventHandler(openGeroy);
-                Controls.Add(persljud[i].lbl);
+                panel2.Controls.Add(persljud[i].lbl);
 
-                persljud[i].pic.Location = new Point(x, 120);
+                persljud[i].pic.Location = new Point(x, 30);
                 persljud[i].pic.Size = new Size(80, 60);
                 persljud[i].pic.SizeMode = PictureBoxSizeMode.Zoom;
                 persljud[i].pic.Click += new EventHandler(openGeroy);
@@ -79,7 +79,7 @@ namespace WindowsFormsApplication1
                     persljud[i].pic.Load("../../Картинки/" + persljud[i].name + ".jpg");
                 }
                 catch (Exception) { }
-                Controls.Add(persljud[i].pic);
+                panel2.Controls.Add(persljud[i].pic);
 
                 x = x + 100;
             }
@@ -130,11 +130,16 @@ namespace WindowsFormsApplication1
 
                 if (persljud[i].lbl.Visible)
                 {
-                    persljud[i].lbl.Location = new Point(x, 100);
-                    persljud[i].pic.Location = new Point(x, 120);
+                    persljud[i].lbl.Location = new Point(x, 10);
+                    persljud[i].pic.Location = new Point(x, 30);
                     x = x + 100;
                 }
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

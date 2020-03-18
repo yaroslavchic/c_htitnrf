@@ -23,6 +23,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
 
             Text = pers.name;
+            label1.Text = pers.name + "," + pers.vosrast.ToString() + " лет";
             //persljud[i].pic.Load("../../Картинки/" + persljud[i].name + ".jpg");
             pictureBox2.Load("../../Картинки/" + pers.name + ".jpg");
             likeLabel.Text = pers.likes.ToString();
@@ -48,6 +49,16 @@ namespace WindowsFormsApplication1
         {
             pers.Dislikes = pers.Dislikes + 1;
             Dislikelabel.Text = pers.Dislikes.ToString();
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
