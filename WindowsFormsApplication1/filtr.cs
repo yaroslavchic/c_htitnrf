@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1
 
         public Label lbl;
         public PictureBox pic;
-
+        public int  prosmotr;
         public Pers(string name1 , int vosrast1 , string pol1, int likes1, int Dislikes1)
         {
             name = name1;
@@ -34,6 +34,7 @@ namespace WindowsFormsApplication1
             likes = likes1;
             Dislikes = Dislikes1;
             pol = pol1;
+            prosmotr = 0;
             lbl = new Label();
             pic = new PictureBox();
         }

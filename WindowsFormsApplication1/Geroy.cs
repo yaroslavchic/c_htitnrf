@@ -28,6 +28,8 @@ namespace WindowsFormsApplication1
             pictureBox2.Load("../../Картинки/" + pers.name + ".jpg");
             likeLabel.Text = pers.likes.ToString();
             Dislikelabel.Text = pers.Dislikes.ToString();
+            label2.Text = pers.prosmotr.ToString();
+            pers.prosmotr = pers.prosmotr + 1;
         }
 
         private void Geroy_Load(object sender, EventArgs e)
@@ -52,6 +54,8 @@ namespace WindowsFormsApplication1
 
         }
 
+        
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -61,5 +65,16 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void likeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+            
     }
 }

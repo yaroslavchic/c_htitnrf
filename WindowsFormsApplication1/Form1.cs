@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
     {
         int nomer_voprosa = 1;
         int nomer_otveta = 1;
-
+        
         int startTime;
 
         public Form1()

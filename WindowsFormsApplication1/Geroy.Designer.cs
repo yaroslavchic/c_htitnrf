@@ -34,6 +34,7 @@
             this.likeLabel = new System.Windows.Forms.Label();
             this.Dislikelabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dislike)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.like)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -55,7 +56,7 @@
             // 
             this.like.Image = global::WindowsFormsApplication1.Properties.Resources.Лайк;
             this.like.InitialImage = null;
-            this.like.Location = new System.Drawing.Point(162, 199);
+            this.like.Location = new System.Drawing.Point(165, 199);
             this.like.Name = "like";
             this.like.Size = new System.Drawing.Size(66, 50);
             this.like.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -77,11 +78,12 @@
             // 
             this.likeLabel.AutoSize = true;
             this.likeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.likeLabel.Location = new System.Drawing.Point(224, 220);
+            this.likeLabel.Location = new System.Drawing.Point(224, 223);
             this.likeLabel.Name = "likeLabel";
             this.likeLabel.Size = new System.Drawing.Size(27, 29);
             this.likeLabel.TabIndex = 4;
             this.likeLabel.Text = "0";
+            this.likeLabel.Click += new System.EventHandler(this.likeLabel_Click);
             // 
             // Dislikelabel
             // 
@@ -104,11 +106,23 @@
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.label2.Location = new System.Drawing.Point(245, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(27, 29);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "0";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Geroy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Dislikelabel);
             this.Controls.Add(this.likeLabel);
@@ -134,5 +148,6 @@
         private System.Windows.Forms.Label likeLabel;
         private System.Windows.Forms.Label Dislikelabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
