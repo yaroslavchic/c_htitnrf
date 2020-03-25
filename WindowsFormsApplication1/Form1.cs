@@ -123,7 +123,6 @@ namespace WindowsFormsApplication1
                 nVoprosaLabel.Text = "Вопрос " + nomer_voprosa.ToString() + "/10";
             
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             //Form2 helpForm = new Form2();
