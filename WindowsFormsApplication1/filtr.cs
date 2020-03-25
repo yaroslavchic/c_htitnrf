@@ -131,8 +131,8 @@ namespace WindowsFormsApplication1
 
                 if (persljud[i].lbl.Visible)
                 {
-                    persljud[i].lbl.Location = new Point(x, 10);
-                    persljud[i].pic.Location = new Point(x, 30);
+                    persljud[i].lbl.Location = new Point(x, 20);
+                    persljud[i].pic.Location = new Point(x, 60);
                     x = x + 100;
                 }
             }

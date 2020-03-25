@@ -113,12 +113,15 @@ namespace WindowsFormsApplication1
             }
             else
             {
+                MessageBox.Show("Ты не прав");
                 return;
             }
 
 
             nomer_voprosa = nomer_voprosa + 1;
-            nVoprosaLabel.Text = "Вопрос " + nomer_voprosa.ToString() + "/11"; 
+            if (nomer_voprosa < 11)
+                nVoprosaLabel.Text = "Вопрос " + nomer_voprosa.ToString() + "/10";
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
