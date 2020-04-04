@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1
     {
         int nomer_voprosa = 1;
         int nomer_otveta = 1;
+        int ugadal = 0;
         
         int startTime;
 
@@ -63,65 +64,78 @@ namespace WindowsFormsApplication1
                 return;
             }
             
-            if (nomer_voprosa == 0 && nomer_otveta == 1)
+            if (nomer_voprosa == 0)
             {
+                else if (nomer_otveta == 1) ugadal = ugadal + 1;
                 vopros1("Кто изображен на картинке");
             }
-            else if (nomer_voprosa == 1 && nomer_otveta == 1)
+            else if (nomer_voprosa == 1)
             {
+                else if (nomer_otveta == 2) ugadal = ugadal + 1;
                 vopros1("Автор дневников");
             }
 
-            else if (nomer_voprosa == 2 && nomer_otveta == 2)
+            else if (nomer_voprosa == 2 )
             {
+                else if (nomer_otveta == 2) ugadal = ugadal + 1;
                 vopros1("Мейблленд что это");
             }
 
-            else if (nomer_voprosa == 3 && nomer_otveta == 3)
+            else if (nomer_voprosa == 3 )
             {
+                else if (nomer_otveta == 3) ugadal = ugadal + 1;
                 vopros1("Сколько Форд был в другом измерении");
             }
 
-            else if (nomer_voprosa == 4 && nomer_otveta == 1)
+            else if (nomer_voprosa == 4 )
             {
+                else if (nomer_otveta == 1) ugadal = ugadal + 1;
                 vopros1("Кто такая Пухля");
             }
 
-            else if (nomer_voprosa == 5 && nomer_otveta == 2)
+            else if (nomer_voprosa == 5)
             {
+                else if (nomer_otveta == 2) ugadal = ugadal + 1;
                 vopros1("Какой дневник у Диппера");
             }
-             else if (nomer_voprosa == 6 && nomer_otveta == 3)
+             else if (nomer_voprosa == 6 )
             {
+                else if (nomer_otveta == 3) ugadal = ugadal + 1;
                 vopros1("Какой дневник у Гидеона");
             }
-             else if (nomer_voprosa == 7 && nomer_otveta == 2)
+             else if (nomer_voprosa == 7 )
             {
+                else if (nomer_otveta == 2) ugadal = ugadal + 1;
                 vopros1("Странногедон что такое");
             }
-             else if (nomer_voprosa == 8 && nomer_otveta == 2)
+             else if (nomer_voprosa == 8 )
             {
+                else if (nomer_otveta == 2) ugadal = ugadal + 1;
                 vopros1("Сколько лет Дипперу и Мейбел");
             }
-            else if (nomer_voprosa == 9 && nomer_otveta == 3)
+            else if (nomer_voprosa == 9 )
             {
+                else if (nomer_otveta == 3) ugadal = ugadal + 1;
                 vopros1("Кто такой Блэндин");
             }
             else if (nomer_voprosa == 10 && nomer_otveta == 2)
             {
+                else if (nomer_otveta == 2) ugadal = ugadal + 1;
                 MessageBox.Show("Ты заслуживаешь таких же проблем как у Диппера и Мейбл Пайнс");
             }
             else
             {
-                MessageBox.Show("Ты не прав");
-                return;
+                //MessageBox.Show("Ты не прав");
+                //return;
             }
 
 
             nomer_voprosa = nomer_voprosa + 1;
             if (nomer_voprosa < 11)
                 nVoprosaLabel.Text = "Вопрос " + nomer_voprosa.ToString() + "/10";
-            
+            label1.Text = "Правильных " + ugadal.ToString() + "/10 ";
+
+
         }
         private void button4_Click(object sender, EventArgs e)
         {
