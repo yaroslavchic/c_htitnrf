@@ -66,68 +66,64 @@ namespace WindowsFormsApplication1
             
             if (nomer_voprosa == 0)
             {
-                else if (nomer_otveta == 1) ugadal = ugadal + 1;
+              if (nomer_otveta == 1) ugadal = ugadal + 1;
                 vopros1("Кто изображен на картинке");
             }
-            else if (nomer_voprosa == 1)
+           if (nomer_voprosa == 1)
             {
-                else if (nomer_otveta == 2) ugadal = ugadal + 1;
+                 if (nomer_otveta == 1) ugadal = ugadal + 1;
                 vopros1("Автор дневников");
             }
 
-            else if (nomer_voprosa == 2 )
+            if (nomer_voprosa == 2 )
             {
-                else if (nomer_otveta == 2) ugadal = ugadal + 1;
+                if (nomer_otveta == 2) ugadal = ugadal + 1;
                 vopros1("Мейблленд что это");
             }
 
             else if (nomer_voprosa == 3 )
             {
-                else if (nomer_otveta == 3) ugadal = ugadal + 1;
+                 if (nomer_otveta == 3) ugadal = ugadal + 1;
                 vopros1("Сколько Форд был в другом измерении");
             }
 
             else if (nomer_voprosa == 4 )
             {
-                else if (nomer_otveta == 1) ugadal = ugadal + 1;
+                 if (nomer_otveta == 1) ugadal = ugadal + 1;
                 vopros1("Кто такая Пухля");
             }
 
             else if (nomer_voprosa == 5)
             {
-                else if (nomer_otveta == 2) ugadal = ugadal + 1;
+               if (nomer_otveta == 2) ugadal = ugadal + 1;
                 vopros1("Какой дневник у Диппера");
             }
              else if (nomer_voprosa == 6 )
             {
-                else if (nomer_otveta == 3) ugadal = ugadal + 1;
+                 if (nomer_otveta == 3) ugadal = ugadal + 1;
                 vopros1("Какой дневник у Гидеона");
             }
              else if (nomer_voprosa == 7 )
             {
-                else if (nomer_otveta == 2) ugadal = ugadal + 1;
+                if (nomer_otveta == 2) ugadal = ugadal + 1;
                 vopros1("Странногедон что такое");
             }
              else if (nomer_voprosa == 8 )
             {
-                else if (nomer_otveta == 2) ugadal = ugadal + 1;
+                 if (nomer_otveta == 2) ugadal = ugadal + 1;
                 vopros1("Сколько лет Дипперу и Мейбел");
             }
             else if (nomer_voprosa == 9 )
             {
-                else if (nomer_otveta == 3) ugadal = ugadal + 1;
+                 if (nomer_otveta == 3) ugadal = ugadal + 1;
                 vopros1("Кто такой Блэндин");
             }
             else if (nomer_voprosa == 10 && nomer_otveta == 2)
             {
-                else if (nomer_otveta == 2) ugadal = ugadal + 1;
+                 if (nomer_otveta == 2) ugadal = ugadal + 1;
                 MessageBox.Show("Ты заслуживаешь таких же проблем как у Диппера и Мейбл Пайнс");
             }
-            else
-            {
-                //MessageBox.Show("Ты не прав");
-                //return;
-            }
+           
 
 
             nomer_voprosa = nomer_voprosa + 1;
