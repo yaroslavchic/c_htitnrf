@@ -18,6 +18,26 @@ namespace WindowsFormsApplication1
         
         int startTime;
 
+        public struct Vopr
+        {
+            public string name;
+            public string Klass;
+            public int price;
+            public Button btn;
+
+            public Vopr(string NameCar, string KlassCar, int priceCar)
+            {
+                name = NameCar;
+                Klass = KlassCar;
+                price = priceCar;
+                btn = new Button();
+            }
+        }
+        public (string name1, int nomer_otveta)
+        {
+            int nomer_otveta = 1;
+        }
+
         public Form1()
         {
             InitializeComponent();
