@@ -10,6 +10,25 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+    public struct Vopr
+    {
+        
+    public string name;
+        public string o1;
+        public string o2;
+        public string o3;
+    public Button btn;
+
+public Vopr(string NameVopr, string o1Vopr, string o2Vopr, string o3Vopr)
+    {
+        name = NameVopr;
+           o1 = o1Vopr;
+            o2 = o2Vopr;
+            o3 = o3Vopr;
+        btn = new Button();
+    }
+
+}
     public partial class Form1 : Form
     {
         int nomer_voprosa = 1;
@@ -18,24 +37,10 @@ namespace WindowsFormsApplication1
         
         int startTime;
 
-        public struct Vopr
+        
+        public void f1(string name1, int nomer_otveta)
         {
-            public string name;
-            public string Klass;
-            public int price;
-            public Button btn;
-
-            public Vopr(string NameCar, string KlassCar, int priceCar)
-            {
-                name = NameCar;
-                Klass = KlassCar;
-                price = priceCar;
-                btn = new Button();
-            }
-        }
-        public (string name1, int nomer_otveta)
-        {
-            int nomer_otveta = 1;
+           // int nomer_otveta = 1;
         }
 
         public Form1()
