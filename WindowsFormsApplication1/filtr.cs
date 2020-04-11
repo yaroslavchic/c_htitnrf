@@ -69,6 +69,7 @@ namespace WindowsFormsApplication1
                 persljud.Add(new persljudr(parts[0], parts[1], Convert.ToInt32(parts[2])));
             }
 
+
             int x = 10;
             for (int i = 0; i < 10; i++)
             {
