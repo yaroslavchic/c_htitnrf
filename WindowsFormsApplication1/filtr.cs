@@ -50,17 +50,24 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
 
-            persljud[0] = new Pers("Мэйбл", 12, "женский", 0, 0);
-            persljud[1] = new Pers("Диппер", 12, "мужской", 0, 0);
-            persljud[2] = new Pers("Венди", 15, "женский", 0, 0);
-            persljud[3] = new Pers("Стенфорд", 60, "мужской", 0, 0);
-            persljud[4] = new Pers("Стенли", 60, "мужской", 0, 0);
-            persljud[5] = new Pers("Кэнди Чу", 12, "женский", 0, 0);
-            persljud[6] = new Pers("Гидеон", 10, "мужской", 0, 0);
-            persljud[7] = new Pers("Гренда", 12, "женский", 0, 0);
-            persljud[8] = new Pers("Робби", 13 , "мужской", 0, 0);
-            persljud[9] = new Pers("билл сайфер", 1000, "", 0, 0);
+            // persljud[0] = new Pers("Мэйбл", 12, "женский", 0, 0);
+            //persljud[1] = new Pers("Диппер", 12, "мужской", 0, 0);
+            //persljud[2] = new Pers("Венди", 15, "женский", 0, 0);
+            //persljud[3] = new Pers("Стенфорд", 60, "мужской", 0, 0);
+            //persljud[4] = new Pers("Стенли", 60, "мужской", 0, 0);
+            //persljud[5] = new Pers("Кэнди Чу", 12, "женский", 0, 0);
+            //persljud[6] = new Pers("Гидеон", 10, "мужской", 0, 0);
+            //persljud[7] = new Pers("Гренда", 12, "женский", 0, 0);
+            //persljud[8] = new Pers("Робби", 13 , "мужской", 0, 0);
+            //persljud[9] = new Pers("билл сайфер", 1000, "", 0, 0);
 
+            string[] lines = System.IO.File.ReadAllLines("Персы.txt");
+
+            foreach (string str in lines)
+            {
+                string[] parts = str.Split(new string[] { ", " }, StringSplitOptions.None);
+                persljud.Add(new persljudr(parts[0], parts[1], Convert.ToInt32(parts[2])));
+            }
 
             int x = 10;
             for (int i = 0; i < 10; i++)
