@@ -183,5 +183,15 @@ public Vopr(string NameVopr, string o1Vopr, string o2Vopr, string o3Vopr)
             filtr d = new filtr();
             d.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void показатьПравильныйОтветToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            label4.Visible = true;
+        }
     }
 }
