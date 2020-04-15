@@ -192,6 +192,15 @@ public Vopr(string NameVopr, string o1Vopr, string o2Vopr, string o3Vopr)
         private void показатьПравильныйОтветToolStripMenuItem_Click(object sender, EventArgs e)
         {
             label4.Visible = true;
+
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Environment.TickCount - startTime < 5000)
+            label4.Visible = true;
+            else
+                label4.Visible = false;
+
         }
     }
 }

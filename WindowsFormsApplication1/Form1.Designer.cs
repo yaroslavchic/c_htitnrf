@@ -46,6 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.показатьПравильныйОтветToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -178,8 +179,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(294, 203);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 26;
+            this.label4.Text = "54689708";
             this.label4.Visible = false;
             // 
             // contextMenuStrip1
@@ -243,6 +245,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem показатьПравильныйОтветToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
