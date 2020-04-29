@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.polComboBox = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SWYAZ = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -92,11 +93,22 @@
             this.panel2.TabIndex = 8;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // SWYAZ
+            // 
+            this.SWYAZ.Location = new System.Drawing.Point(516, 12);
+            this.SWYAZ.Name = "SWYAZ";
+            this.SWYAZ.Size = new System.Drawing.Size(75, 23);
+            this.SWYAZ.TabIndex = 9;
+            this.SWYAZ.Text = "button2";
+            this.SWYAZ.UseVisualStyleBackColor = true;
+            this.SWYAZ.Click += new System.EventHandler(this.SWYAZ_Click);
+            // 
             // filtr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 261);
+            this.Controls.Add(this.SWYAZ);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.polComboBox);
             this.Controls.Add(this.label2);
@@ -119,5 +131,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox polComboBox;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button SWYAZ;
     }
 }

@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net;
+using System.Net.Mail;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
@@ -143,6 +145,70 @@ namespace WindowsFormsApplication1
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
+
+
+        }
+
+        private void SWYAZ_Click(object sender, EventArgs e)
+        {
+
+
+            MailAddress fromMailAddress = new MailAddress("yaroslav_pronin2005@mail.com", "Михаил Абрамов");
+            MailAddress toAddress = new MailAddress("beavisabra@gmail.com", "Михаил Абрамов");
+
+
+
+
+
+            using (MailMessage mailMessage = new MailMessage(fromMailAddress, toAddress))
+
+
+            using (SmtpClient smtpClient = new SmtpClient())
+
+
+            {
+
+
+                mailMessage.Subject = "Привет";
+
+
+                mailMessage.Body = "рпвпкдшг";
+
+
+               // mailMessage.Attachments.Add(new Attachment("Авто.txt"));
+
+
+
+
+
+                smtpClient.Host = "smtp.gmail.com";
+
+
+                smtpClient.Port = 587;
+
+
+                smtpClient.EnableSsl = true;
+
+
+                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+
+
+                smtpClient.UseDefaultCredentials = false;
+
+
+                smtpClient.Credentials = new NetworkCredential(fromMailAddress.Address, "swallow");
+
+
+
+
+
+                smtpClient.Send(mailMessage);
+                MessageBox.Show("отправилось");
+                
+
+
+            }
+
 
         }
     }
