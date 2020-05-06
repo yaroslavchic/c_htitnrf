@@ -202,5 +202,11 @@ public Vopr(string NameVopr, string o1Vopr, string o2Vopr, string o3Vopr)
                 label4.Visible = false;
 
         }
+
+        private void Otsiv_Click(object sender, EventArgs e)
+        {
+            ResponseForm rf= new ResponseForm();
+            rf.Show();
+        }
     }
 }

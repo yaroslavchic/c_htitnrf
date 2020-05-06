@@ -61,15 +61,16 @@
             this.webBrowser1.TabIndex = 18;
             this.webBrowser1.Url = new System.Uri("https://payment.megafon.ru/vjet/tmpl?form_request_id=13d6e78a-1c6a-431c-a991-4787" +
         "52caeec4&hash=eyJwYXJhbXMiOiIiLCJtc2lzZG4iOiIiLCJzaWduIjoiIn0=", System.UriKind.Absolute);
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
-            // Form2
+            // GiveMeMoneyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 496);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label2);
-            this.Name = "Form2";
+            this.Name = "GiveMeMoneyForm";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
