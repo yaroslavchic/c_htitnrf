@@ -41,7 +41,7 @@ namespace WindowsFormsApplication1
             mailMessage.Subject = "Новый отзыв";
             mailMessage.Body =
                 "Раздел: " + comboBox2.Text + Environment.NewLine +
-                "Как связаться: " + textBox.Text + Environment.NewLine +
+               // "Как связаться: " + textBox.Text + Environment.NewLine +
                 Environment.NewLine +
                 "Сообщение:" + Environment.NewLine + textBox2.Text;
 
@@ -57,7 +57,7 @@ namespace WindowsFormsApplication1
             smtpClient.UseDefaultCredentials = false;
             smtpClient.Credentials =
                 new NetworkCredential(fromMailAddress.Address,
-                    clan.password);
+                    //clan.password);
 
             smtpClient.Send(mailMessage);
             MessageBox.Show("Спасибо за отзыв");
@@ -65,14 +65,14 @@ namespace WindowsFormsApplication1
 
         string address1 = "";
         string address2 = "";
-    }
+    
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                adress1 = openFileDialog1.FileName;
-                pictureBox1.Load(adress1);
+                //adress1 = openFileDialog1.FileName;
+               // pictureBox1.Load(adress1);
             }
         }
 
@@ -80,8 +80,8 @@ namespace WindowsFormsApplication1
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                adress2 = openFileDialog2.FileName;
-                pictureBox2.Load(adress2);
+               // adress2 = openFileDialog2.FileName;
+               // pictureBox2.Load(adress2);
             }
         }
 
