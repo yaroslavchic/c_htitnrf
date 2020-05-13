@@ -205,7 +205,7 @@ public Vopr(string NameVopr, string o1Vopr, string o2Vopr, string o3Vopr)
 
         private void Otsiv_Click(object sender, EventArgs e)
         {
-            ResponseForm rf= new ResponseForm();
+            Form2 rf= new Form2();
             rf.Show();
         }
     }

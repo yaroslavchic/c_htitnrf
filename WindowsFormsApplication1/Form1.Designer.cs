@@ -201,9 +201,9 @@
             // 
             // Otsiv
             // 
-            this.Otsiv.Location = new System.Drawing.Point(31, 43);
+            this.Otsiv.Location = new System.Drawing.Point(12, 53);
             this.Otsiv.Name = "Otsiv";
-            this.Otsiv.Size = new System.Drawing.Size(75, 23);
+            this.Otsiv.Size = new System.Drawing.Size(75, 38);
             this.Otsiv.TabIndex = 27;
             this.Otsiv.Text = "Оставить отзыв";
             this.Otsiv.UseVisualStyleBackColor = true;
